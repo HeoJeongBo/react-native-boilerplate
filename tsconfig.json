@@ -1,3 +1,29 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react-native",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "lib": ["ES2017"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@navigation": ["src/navigation/index"],
+      "@screens": ["src/screens/index"]
+    },
+    "plugins": [
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "App.tsx",
+  ],
+  "exclude": ["node_modules", "babel.config.js"]
 }
