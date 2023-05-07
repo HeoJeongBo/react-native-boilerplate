@@ -9,7 +9,6 @@ export const BOTTOM_TABS: Record<
   Home: true,
   Screen1: true,
   Screen2: true,
-  Screen3: true,
 };
 
 export const bottomTabKeys = typedObjectKeys(BOTTOM_TABS);

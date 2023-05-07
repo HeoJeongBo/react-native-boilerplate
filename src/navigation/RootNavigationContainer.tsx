@@ -1,9 +1,8 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { Home, NestedTest } from '@screens';
-import BottomTabNavigator from './BottomTabNavigator';
 import { getStackScreens } from 'src/utils/screen.utils';
+import BottomTabNavigator from './BottomTabNavigator';
 
 const Stack = createNativeStackNavigator();
 
