@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { Home } from '@screens';
+import { Home, NestedTest } from '@screens';
 import BottomTabNavigator from './BottomTabNavigator';
 
 const Stack = createNativeStackNavigator();
@@ -13,11 +13,9 @@ const RootNavigationContainer = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen
-          name="BottomTabNavigator"
-          component={BottomTabNavigator}
-        />
+        <Stack.Screen name="BottomTab" component={BottomTabNavigator} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="NestedTest" component={NestedTest} />
       </Stack.Navigator>
     </NavigationContainer>
   );

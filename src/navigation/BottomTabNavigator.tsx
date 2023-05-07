@@ -1,13 +1,15 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Home } from '@screens';
+import { Home, Screen1, Screen2 } from '@screens';
 import React from 'react';
 
 const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{ headerShown: false }}>
       <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Screen1" component={Screen1} />
+      <Tab.Screen name="Screen2" component={Screen2} />
     </Tab.Navigator>
   );
 };

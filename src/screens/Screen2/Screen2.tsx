@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Home: React.FC = () => {
+const Screen2 = () => {
   return (
     <View
       style={{
@@ -10,9 +10,9 @@ const Home: React.FC = () => {
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Text>Home</Text>
+      <Text>Screen2</Text>
     </View>
   );
 };
 
-export default React.memo(Home);
+export default Screen2;
