@@ -18,7 +18,8 @@
       "@navigation": ["src/navigation/index"],
       "@screens": ["src/screens/index"],
       "@components": ["src/components/index"],
-      "@utils": ["src/utils/index"]
+      "@utils": ["src/utils/index"],
+      "@types": ["src/types/index"]
     },
     "plugins": [
     ]

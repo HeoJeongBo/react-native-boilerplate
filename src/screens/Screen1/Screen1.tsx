@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { ScreenType } from 'src/types/screen.types';
 
 const Screen1: React.FC = () => {
   return (
@@ -15,4 +16,6 @@ const Screen1: React.FC = () => {
   );
 };
 
-export default Screen1;
+export default {
+  component: Screen1,
+} as ScreenType;

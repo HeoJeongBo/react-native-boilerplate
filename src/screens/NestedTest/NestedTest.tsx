@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { ScreenType } from 'src/types/screen.types';
 
 const NestedTest: React.FC = () => {
   return (
@@ -15,4 +16,6 @@ const NestedTest: React.FC = () => {
   );
 };
 
-export default NestedTest;
+export default {
+  component: NestedTest,
+} as ScreenType;

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import { ScreenType } from 'src/types/screen.types';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <View
       style={{
@@ -15,4 +16,6 @@ const Home: React.FC = () => {
   );
 };
 
-export default React.memo(Home);
+export default {
+  component: Home,
+} as ScreenType;

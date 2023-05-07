@@ -1,5 +1,6 @@
 import { typedObjectKeys } from 'src/utils/js.utils';
 import { BottomTabNavigatorRoute } from './Navigator.types';
+import * as screens from '@screens';
 
 export const BOTTOM_TABS: Record<
   keyof BottomTabNavigatorRoute['BottomTab'],
